@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+
+    <ImageView
+        android:id="@+id/window_seriy_color"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_mainwinver1" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/window_seriy_color"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="00:35 - 03:10" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title_way"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/window_seriy_color"
+        app:layout_constraintStart_toEndOf="@+id/title_time"
+        app:layout_constraintTop_toTopOf="@+id/window_seriy_color"
+        tools:text="00:35 - 03:10" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title_station"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:gravity="center_vertical"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/window_seriy_color"
+        app:layout_constraintStart_toEndOf="@+id/title_time"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Москва - Сочи" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
